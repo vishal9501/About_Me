@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:#222;
+}
+.box{
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+.box span{
+    position: absolute;
+    inset: 0;
+    background:rgba(255,255,255,0.1);
+    transform: rotate(calc(45deg * var(--i)));
+} 
+.box span::before{
+    content: ' ';
+    position: absolute;
+    left:50%;
+    width:250px;
+    height: 300px;
+    background: url();
+    background-size:cover;
+    background-position:center;
+    transform: translatex(-50%) translateY(-100px);
+}
